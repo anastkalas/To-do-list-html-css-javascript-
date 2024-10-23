@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>to do list</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class='title_todo'>
+		<h1 class='title'>TO DO LIST</h1>
+		<div class='overall_container'>
+			<div class='input_submit'>
+				<input id='input-field' type="text" placeholder="Insert your errands!">
+				<button onClick=addTask() type='submit' class='btn'>Add Errand</button>
+			</div>
+			<div class='to_do_container'>
+				<ul id ="list-container">
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

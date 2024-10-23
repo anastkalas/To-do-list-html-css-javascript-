@@ -1,0 +1,128 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background: url('R.jfif') center/cover ;
+	background-position: center bottom;
+	display: flex;
+	justify-content: center;
+}
+
+.title_todo{
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position:  center;
+	background: rgb(139, 72, 215, 0.7);
+	border-radius: 20px;
+	width: 600px;
+
+
+
+}
+.title{
+	font-size: 30px;
+	color: white;
+}
+
+.overall_container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 30px;
+	width: 600px;
+	margin-top: 30px;
+	border-radius: 15px;
+}
+
+
+.btn{
+	border-radius: 10px;
+	height: 45px;
+	width: 150px;
+	font-size: 18px;
+	margin-top: -1px;
+}
+
+.btn:hover{
+	background: black;
+	color: white;
+	outline: none;
+	border: 1px;
+}
+
+.input_submit{
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+
+}
+
+#input-field{
+	height: 40px;
+	border-radius: 10px;
+	border: 1px;
+	outline: none;
+	font-size: 20px;
+	margin-right: 20px;
+	width: 350px;
+}
+
+.to_do_container{
+	width: 600px;
+}
+
+
+ul li{
+	list-style: none;
+	font-size: 20px;
+	padding: 12px 8px 12px 50px;
+	user-select: none;
+	cusron: pointer;
+	position: relative;
+}
+
+
+ul li::before{
+	content: '';
+	position: absolute;
+	height: 28px;
+	width: 28px;
+	border-radius: 50px;
+	background-image: url(images/unchecked.png);
+	background-size: cover;
+	background-position: center;
+	left: 8px;
+	top: 12px;
+
+}
+
+ul li.checked{
+	color: white;
+	text-decoration: line-through;
+}
+
+ul li.checked::before{
+	background-image: url(images/checked.jfif);
+}
+
+ul li span{
+	position: absolute;
+	right: 0;
+	top: 5px;
+	width: 40px;
+	height: 40px;
+	font-size: 22px;
+	color: #555;
+	line-height: 40px;
+	text-align: center;
+
+}
+
+ul li span:hover{
+	background: #edeef0;
+}
